@@ -15,8 +15,10 @@ html {
   direction: rtl;
   color: var(--base-white);
   background-color: var(--base-bg);
+  overflow-x: hidden;
 }
 body {
+  width: 90%;
   max-width: 1200px;
   margin: auto;
 }
@@ -39,7 +41,7 @@ body {
 }
 
 .header_nav_item {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   opacity: 0.8;
   transition: all 0.3s ease-out;
   &:hover {
@@ -75,6 +77,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 .subheader_sitename span {
   color: var(--text-white);
@@ -93,7 +97,24 @@ body {
 .subheader_support_text a {
   color: var(--text-white);
   transition: all 0.2s ease-out;
+  font-size: 0.85rem;
   &:hover {
     color: var(--base-white);
   }
+}
+.subheader_support_text p {
+  font-size: 0.85rem;
+}
+.cat_container {
+  width: 100%;
+  margin: 0 2rem;
+}
+.cat_list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cat_item {
+  font-size: 0.9rem;
 }
