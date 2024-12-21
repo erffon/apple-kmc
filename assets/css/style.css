@@ -17,8 +17,10 @@ html {
   background-color: var(--base-bg);
 }
 body {
-  padding: 0 20rem;
+  max-width: 1200px;
+  margin: auto;
 }
+
 .header {
   width: 100%;
   display: flex;
