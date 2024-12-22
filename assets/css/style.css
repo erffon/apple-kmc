@@ -19,7 +19,8 @@ html {
 }
 body {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1310px;
+  padding: 0 2rem;
   margin: auto;
 }
 
@@ -73,7 +74,7 @@ body {
 }
 .subheader {
   width: 100%;
-  padding-top: 1.5rem;
+  padding: 1.5rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -116,5 +117,11 @@ body {
   align-items: center;
 }
 .cat_item {
-  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cat_item img {
+  max-height: 3rem;
 }
