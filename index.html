@@ -152,5 +152,20 @@
         <div class="cat_slider_item">5</div>
       </div>
     </section>
+
+    <!-- ------------------------------- scripts ------------------------------- -->
+    <script src="/assets/js/jquery-3.6.4.min.js"></script>
+    <script src="/assets/js/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".cat_slider").slick({
+          // slick settings
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          // etc.
+        });
+      });
+    </script>
   </body>
 </html>
