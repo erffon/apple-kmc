@@ -126,11 +126,21 @@ body {
 .cat_item img {
   max-height: 3rem;
   transition: all 0.3s ease-out;
-  &:hover {
-    transform: translateY(-10px);
-  }
+}
+.cat_item img:hover {
+  transform: translateY(-10px);
 }
 .cat_item p {
   font-size: 0.85rem;
   color: #f0f0f0;
+  margin: 1rem 0 0;
+}
+.cat_slider {
+  padding: 2rem 0;
+}
+.cat_slider-item:hover {
+  cursor: grab;
+}
+.cat_slider-item > img {
+  border-radius: 10px;
 }
