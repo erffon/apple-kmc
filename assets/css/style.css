@@ -135,6 +135,9 @@ body {
   color: #f0f0f0;
   margin: 1rem 0 0;
 }
+.cat_slider-container {
+  margin-bottom: 2rem;
+}
 .cat_slider {
   padding: 2rem 0;
 }
