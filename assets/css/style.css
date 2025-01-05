@@ -147,3 +147,24 @@ body {
 .cat_slider-item > img {
   border-radius: 10px;
 }
+.offers-heading {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.offers-heading h2 {
+  font-size: 1.25rem;
+}
+.offers-heading h2 span {
+  font-size: 0.9rem;
+  color: red;
+  font-weight: 400;
+}
+.offers-heading button {
+  padding: 4px 8px;
+  border-radius: 60px;
+  border: 0;
+  font-size: 0.9rem;
+  color: #808080;
+  font-weight: 600;
+}
