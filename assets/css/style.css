@@ -1,11 +1,23 @@
 :root {
+  /* --------------------------------- variables --------------------------------- */
+  /* colors */
   --base-bg: #121212;
   --base-white: white;
+
   --text-white: #ffffff80;
+
+  --card-black: #1a1a1a;
+
+  /* border radius */
+  --radius-10: 10px;
+  --radius-12: 12px;
+  --radius-18: 18px;
+  --radius-full: 100px;
 }
 a {
   color: var(--base-white);
   text-decoration: none;
+  cursor: pointer;
 }
 * {
   margin: 0;
@@ -23,7 +35,32 @@ body {
   padding: 0 2rem;
   margin: auto;
 }
-
+/* ------------------------------- font styles ------------------------------ */
+.vazirmatn-light {
+  font-family: "Vazirmatn", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+.vazirmatn-regular {
+  font-family: "Vazirmatn", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.vazirmatn-bold {
+  font-family: "Vazirmatn", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.vazirmatn-black {
+  font-family: "Vazirmatn", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+/* ----------------------------- header section ----------------------------- */
 .header {
   width: 100%;
   display: flex;
@@ -53,7 +90,7 @@ body {
   &::after {
     content: " جدید";
     background-color: red;
-    border-radius: 60px;
+    border-radius: var(--radius-full);
     font-size: 0.7rem;
     position: relative;
     top: -10px;
@@ -93,7 +130,7 @@ body {
 .subheader_support img {
   width: 35px;
   background-color: var(--base-white);
-  border-radius: 100px;
+  border-radius: var(--radius-full);
 }
 .subheader_support_text a {
   color: var(--text-white);
@@ -106,6 +143,7 @@ body {
 .subheader_support_text p {
   font-size: 0.85rem;
 }
+/* ---------------------- category image slider section --------------------- */
 .cat_container {
   width: 100%;
   margin: 2rem 0;
@@ -145,12 +183,14 @@ body {
   cursor: grab;
 }
 .cat_slider-item > img {
-  border-radius: 10px;
+  border-radius: var(--radius-10);
 }
+/* ----------------------------- offers section ----------------------------- */
 .offers-heading {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding: 1.25rem 0;
 }
 .offers-heading h2 {
   font-size: 1.25rem;
@@ -162,9 +202,18 @@ body {
 }
 .offers-heading button {
   padding: 4px 8px;
-  border-radius: 60px;
+  border-radius: var(--radius-full);
   border: 0;
   font-size: 0.9rem;
   color: #808080;
-  font-weight: 600;
+}
+.offers_card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.offers_card-item {
+  background-color: var(--card-black);
+  border-radius: var(--radius-18);
 }
