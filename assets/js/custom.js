@@ -10,3 +10,11 @@ $(document).ready(function () {
     cssEase: "ease-out",
   });
 });
+
+function convertToFarsiNumbers(element) {
+  const persianDigits = "۰۱۲۳۴۵۶۷۸۹";
+  element.innerHTML = element.innerHTML.replace(/\d/g, (d) => persianDigits[d]);
+}
+$(".fa-num").each(function () {
+  convertToFarsiNumbers(this);
+});
