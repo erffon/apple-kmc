@@ -5,6 +5,7 @@
   --base-white: white;
 
   --text-white: #ffffff80;
+  --text-gray: #808080;
 
   --card-black: #1a1a1a;
 
@@ -13,6 +14,12 @@
   --radius-12: 12px;
   --radius-18: 18px;
   --radius-full: 100px;
+
+  /* product colors */
+  --cream-prod: #ffecd1;
+  --olive-prod: #84a98c;
+  --cupper-prod: #e07a5f;
+  --mustard-prod: #ffd166;
 }
 a {
   color: var(--base-white);
@@ -34,6 +41,7 @@ body {
   max-width: 1310px;
   padding: 0 2rem;
   margin: auto;
+  position: relative;
 }
 /* ------------------------------- font styles ------------------------------ */
 .vazirmatn-light {
@@ -190,7 +198,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 1.25rem 0;
+  padding: 1rem 0 0 0;
 }
 .offers-heading h2 {
   font-size: 1.25rem;
@@ -212,8 +220,58 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1.25rem;
 }
 .offers_card-item {
   background-color: var(--card-black);
   border-radius: var(--radius-18);
+}
+.offers_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+.offers_card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0.75rem 2rem 0.75rem;
+}
+.offers_card-item img {
+  width: 50%;
+}
+.offers_card-colors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.offers_card-colors > span {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: var(--radius-full);
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+.offers_card-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 0.5rem;
+}
+.offers_card-title h3 {
+  font-size: 1rem;
+}
+.offers_card-title p {
+  font-size: 0.75rem;
+  color: var(--text-gray);
+}
+.offers_card-price {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
