@@ -203,16 +203,16 @@ button {
   color: #f0f0f0;
   margin: 1rem 0 0;
 }
-.cat_slider-container {
+.slider-container {
   margin-bottom: 2rem;
 }
-.cat_slider {
+.slider {
   padding: 2rem 0;
 }
-.cat_slider-item:hover {
+.slider-item:hover {
   cursor: grab;
 }
-.cat_slider-item > img {
+.slider-item > img {
   border-radius: var(--radius-10);
 }
 /* ----------------------------- offers section ----------------------------- */
