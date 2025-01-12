@@ -361,3 +361,13 @@ button {
   width: 100%;
   border-radius: var(--radius-18);
 }
+/* --------------------------- ad banners section --------------------------- */
+.ad_banners_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.ad_banners-item {
+  border-radius: var(--radius-10);
+}
