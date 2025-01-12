@@ -4,11 +4,15 @@
   --base-bg: #121212;
   --base-white: white;
 
+  /* text colors */
   --text-white: #ffffff80;
   --text-gray: #808080;
   --text-disabled: #c1c1c1;
+  --text-gray-light: #e6e6e6;
 
+  /* card bg */
   --card-black: #1a1a1a;
+  --values-bg: #1a1a1a;
 
   /* border radius */
   --radius-10: 10px;
@@ -32,6 +36,9 @@
   --font28: 1.75rem;
   --font30: 1.875;
   --font32: 2rem;
+
+  /* icon colors */
+  --icon-light: #6e7e8d;
 }
 
 * {
@@ -316,4 +323,41 @@ button {
 /* ---------------------------- gift card section --------------------------- */
 .giftcard_container {
   padding: 2rem 0;
+}
+/* ------------------------------ values cards ------------------------------ */
+.values_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 1.5rem;
+}
+.value_item {
+  background-color: var(--values-bg);
+  border-radius: var(--radius-12);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+.value_item svg {
+  fill: var(--icon-light);
+  height: 6rem;
+}
+.value_item h3 {
+  font-size: var(--font16);
+  color: var(--text-gray-light);
+}
+/* -------------------------- video banner section -------------------------- */
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+.video-container video {
+  width: 100%;
+  border-radius: var(--radius-18);
 }

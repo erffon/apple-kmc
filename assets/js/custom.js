@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $(".cat_slider").slick({
+  $(".slider").slick({
     rtl: true,
     dots: true,
     infinite: true,
