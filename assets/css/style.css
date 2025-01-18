@@ -246,7 +246,8 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.25rem;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
 }
 .offers_card-item {
   background-color: var(--card-black);
@@ -255,13 +256,6 @@ button {
 }
 .offers_card-item:hover {
   transform: scale(105%);
-}
-.offers_card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1.5rem;
-  padding: 1.5rem 0;
 }
 .offers_card-item {
   display: flex;
@@ -322,7 +316,7 @@ button {
 }
 /* ---------------------------- gift card section --------------------------- */
 .giftcard_container {
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 /* ------------------------------ values cards ------------------------------ */
 .values_container {
@@ -370,4 +364,83 @@ button {
 }
 .ad_banners-item {
   border-radius: var(--radius-10);
+}
+/* ----------------------------- product slider ----------------------------- */
+.product_slider {
+  width: 100%;
+  direction: rtl; /* Ensures RTL direction */
+}
+.prod_slider_container {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.product_slider-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.product_card-item {
+  background-color: var(--card-black);
+  border-radius: var(--radius-18);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 2rem 1rem;
+  justify-content: stretch;
+  max-width: 17rem;
+}
+.product_slider-container img {
+  border-radius: var(--radius-10);
+}
+.product_card-item img {
+  width: 70%;
+  margin: auto;
+}
+
+.product_card-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 0.5rem;
+  padding-bottom: 2rem;
+}
+.product_card-title h3 {
+  font-size: 1rem;
+}
+.product_card-title p {
+  font-size: 0.75rem;
+  color: var(--text-gray);
+}
+.product_card-colors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.product_card-colors > span {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: var(--radius-full);
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.product_slider-item {
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.slick-next:before {
+  background-color: var(--card-black);
+  padding: 0.5rem;
+  border-radius: var(--radius-full);
+}
+.slick-prev:before {
+  display: none;
 }
